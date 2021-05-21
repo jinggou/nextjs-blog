@@ -1,0 +1,169 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css');
+
+:root {
+  --theme-gray: #f6f8fa;
+  --border: #d1d5da;
+  --theme-black: #24292e;
+  --theme-green: #28a745;
+  --text-gray: #a79a9a;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Ericsson Hilda', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  background-color: var(--theme-gray);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 500px;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.font-mono {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace !important;
+}
+
+/* body,
+p,
+h1,
+h2,
+h3,
+h4 { */
+  /* font-family: 'Ericsson Hilda', Helvetica, Arial, sans-serif; */
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif;
+  color: var(--theme-black);
+} */
+
+.sm-text {
+  font-size: 1rem;
+}
+
+#navbar {
+  position: sticky;
+  font-size: 1rem;
+  background-color: var(--theme-black);
+}
+.navbar-brand {
+  font-size: 1rem;
+}
+#navbar #brand-icon {
+  margin-right: 0.5rem;
+}
+#account-page {
+  width: 360px;
+}
+
+.form-body {
+  padding: 20px;
+  background-color: var(--background);
+  color: var(--theme-black);
+}
+.form {
+  margin: 0 auto;
+}
+
+.form-header {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+}
+
+.signin-callout {
+  margin: 0 20px;
+  font-size: 1rem;
+  padding: 8px 0;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.btn-block {
+  width: 100%;
+}
+#login-btn {
+  color: var(--theme-gray);
+}
+#login-btn:hover {
+  color: var(--theme-black);
+}
+#search-form {
+  display: flex;
+  justify-content: center;
+}
+#search-bar {
+  width: 280px;
+  border-radius: 24px 0 0 24px;
+  padding: 10px 20px;
+}
+#search-btn {
+  border-radius: 0 24px 24px 0;
+  height: 46px;
+  width: 46px;
+}
+#search-bar,
+#search-btn {
+  display: flex;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+
+.book-item {
+  display: block;
+  text-decoration: none;
+  padding: 20px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.book-item:hover {
+  text-decoration: none;
+}
+.book-item::after {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.5px;
+  background: #ccc;
+  content: '';
+  position: absolute;
+}
+.cover {
+  float: left;
+  margin-right: 1rem;
+  width: 100px;
+  min-height: 100px;
+}
+.cover img {
+  width: 100%;
+}
+.img-show {
+  opacity: 1;
+}
+.meta {
+  color: var(--text-gray);
+}
+.book-btn {
+  float: right;
+  margin-left: 1rem;
+}
